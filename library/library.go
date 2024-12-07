@@ -2,8 +2,9 @@ package library
 
 import "fmt"
 
-func SayHello() { // Exported/public dengan cara nama func huruf kapital
+func SayHello(name string) { // Exported/public dengan cara nama func huruf kapital
 	fmt.Println("Hello")
+	introduce(name) // solusi memanggil introduce pada SayHello
 }
 
 func introduce(name string)  { // Unexported/public
